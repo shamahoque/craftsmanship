@@ -84,15 +84,16 @@ public class HumanTowerTest {
 		assertEquals(makeHumanList(testPerson1, testPerson2, testPerson3),
 				testTower.getOrderedHumanList());
 	}
-
+	
 	@Test
-	public void TwoOutofFour() {
-		testTower.build(makeHumanList(testPerson4, testPerson1, testPerson6,
-				testPerson3));
-		assertEquals(2, testTower.getLargestNumberOfPeople());
-		assertEquals(makeHumanList(testPerson1, testPerson3),
+	public void ThreeOutOfSeven() {
+		testTower.build(makeHumanList(testPerson1, testPerson3, testPerson5,
+				testPerson4, testPerson2, testPerson7, testPerson6));
+		assertEquals(3, testTower.getLargestNumberOfPeople());
+		assertEquals(makeHumanList(testPerson1, testPerson2, testPerson3),
 				testTower.getOrderedHumanList());
-
 	}
+
+
 
 }
